@@ -1,7 +1,7 @@
 {
   "name": "outside",
   "version": "2.0.0",
-  "description": "Boilerplate for WDD 330 SleepOutside project",
+  "description": "WDD 330 SleepOutside project",
   "main": "main.js",
   "scripts": {
     "start": "vite",
@@ -10,7 +10,7 @@
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "test": "jest"
   },
-  "author": "Shane Thompson",
+  "author": "Travis Abuton",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.56.0",
