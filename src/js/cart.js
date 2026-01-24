@@ -1,4 +1,6 @@
-import { getLocalStorage, setLocalStorage, updateCartCounter } from "./utils.mjs";
+import { getLocalStorage, loadHeaderFooter, setLocalStorage, updateCartCounter } from "./utils.mjs";
+
+loadHeaderFooter()
 
 // Initialize cart counter on page load
 updateCartCounter();

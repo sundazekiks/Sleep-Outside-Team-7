@@ -1,6 +1,8 @@
-import { getParams, updateCartCounter } from "./utils.mjs";
+import { getParams, loadHeaderFooter, updateCartCounter } from "./utils.mjs";
 import ProductData from "./ProductData.mjs";
 import ProductDetails from "./ProductDetails.mjs";
+
+loadHeaderFooter()
 
 // Initialize cart counter on page load
 updateCartCounter();
