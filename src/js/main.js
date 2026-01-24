@@ -1,10 +1,12 @@
 import ProductData from "./ProductData.mjs";
 import ProductList from "./ProductList.mjs";
-import { renderListWithTemplate, updateCartCounter } from "./utils.mjs";
+import { renderListWithTemplate, updateCartCounter, loadHeaderFooter } from "./utils.mjs";
 import { productCardTemplate } from "./product-card-temp.mjs";
 import Alert from "./Alert.js";
 // Initialize cart counter on page load
+loadHeaderFooter()
 updateCartCounter();
+
 
 const productData = new ProductData("tents");
 const productList = new ProductList("tents", productData, document.querySelector(".product-list"));
