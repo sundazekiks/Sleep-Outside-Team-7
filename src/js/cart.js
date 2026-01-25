@@ -38,7 +38,7 @@ function cartItemTemplate(item) {
   const newItem = `<li class="cart-card divider">
   <a href="#" class="cart-card__image">
     <img
-      src="${item.Image}"
+      src="${item.Images.PrimarySmall}"
       alt="${item.Name}"
     />
   </a>
@@ -64,15 +64,15 @@ document.addEventListener("click", (event) => {
 function removeFromCart(productId) {
   console.log("product id :", productId)
   const cartItems = getLocalStorage("so-cart")
-  if(!cartItems || !cartItems.length) return;
+  if (!cartItems || !cartItems.length) return;
 
   const index = cartItems.findIndex(product => product.Id === productId)
-  
-  if(index !== -1){
-    cartItems.splice(index, 1)
-  } 
 
-  if(cartItems.length === 0){
+  if (index !== -1) {
+    cartItems.splice(index, 1)
+  }
+
+  if (cartItems.length === 0) {
     localStorage.removeItem("so-cart")
   } else {
     setLocalStorage("so-cart", cartItems)

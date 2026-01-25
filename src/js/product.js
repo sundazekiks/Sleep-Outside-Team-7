@@ -5,8 +5,12 @@ import ProductDetails from "./ProductDetails.mjs";
 // Initialize cart counter on page load
 updateCartCounter();
 
-const dataSource = new ProductData("tents");
-const productId = getParams(window.location.search);
+const query = getParams();
+console.log(query)
+const productId = query[0]
+const category = query[1]
+const dataSource = new ProductData(category);
+
 const productDetails = new ProductDetails(productId, dataSource);
 productDetails.init();
 

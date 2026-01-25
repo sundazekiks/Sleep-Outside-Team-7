@@ -3,6 +3,9 @@ import ProductList from "./ProductList.mjs";
 import { renderListWithTemplate, updateCartCounter } from "./utils.mjs";
 import { productCardTemplate } from "./product-card-temp.mjs";
 import Alert from "./Alert.js";
+
+
+
 // Initialize cart counter on page load
 updateCartCounter();
 

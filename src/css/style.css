@@ -327,3 +327,14 @@ footer {
     left: 0;
   }
 }
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px;
+}
+
+.list img {
+  width: 50px;
+}

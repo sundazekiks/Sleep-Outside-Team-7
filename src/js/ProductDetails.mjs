@@ -44,7 +44,7 @@ export default class ProductDetails {
 
     title.textContent = producto.Brand.Name;
     subTitle.textContent = producto.NameWithoutBrand;
-    image.src = producto.Image;
+    image.src = producto.Images.PrimaryLarge;
     price.textContent = `$ ${producto.ListPrice}`;
     color.textContent = producto.Colors[0].ColorName;
     desc.innerHTML = producto.DescriptionHtmlSimple;
